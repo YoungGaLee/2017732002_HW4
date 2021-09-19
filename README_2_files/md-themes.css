@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,700|Roboto:400,700');
+
+.md-default {
+  font-family: Roboto,Arial,"sans serif";
+  line-height: 1.5;
+  font-size: .8rem;
+  text-rendering: optimizeLegibility;
+  color: #50596c;
+}
+
+.md-default *,
+.md-default *:before,
+.md-default *:after {
+  box-sizing: border-box;
+}
+
+.md-default .larger {
+  font-size: 1.2em;
+}
+
+.md-default .smaller {
+  font-size: .8em;
+}
+
+.md-default.presentation,
+.md-default .presentation-display {
+  font-size: 1.2rem;
+}
+
+.md-default h1 { font-size: 2.00em; }
+.md-default h2 { font-size: 1.50em; }
+.md-default h3 { font-size: 1.17em; }
+.md-default h4 { font-size: 1.00em; }
+.md-default h5 { font-size: 0.83em; }
+.md-default h6 { font-size: 0.67em; }
+
+.md-default a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px dashed;
+}
+
+.md-default a:hover {
+  color: inherit;
+  background-color: #eee;
+  text-decoration: none;
+}
+
+.md-default thead tr {
+  background-color: #607D8B;
+  color: #ECEFF1;
+}
+
+.md-default tbody tr:nth-child(odd) {
+  background-color: #ECEFF1;
+}
+
+.md-default tbody tr:nth-child(even) {
+  background-color: #CFD8DC;
+}
+
+.md-default tbody tr:hover {
+  box-shadow: 0px 0px 2px 2px #607D8B;
+  z-index: 10;
+}
+
+.md-default td,
+.md-default th {
+  padding: 5px;
+}
+
+.md-default code, 
+.md-default kbd, 
+.md-default pre, 
+.md-default samp {
+	font-family: "Roboto Mono","SF Mono","Segoe UI Mono",Menlo,Courier,monospace;
+}
+
+.md-default code {
+  display: initial;
+  border-radius: .15rem;
+  font-size: 85%; 
+  line-height: 1.2;
+  padding: .1rem .15rem;
+  border: 1px solid #ddd;
+}
+
+.md-default pre > code {
+  display: block;
+  margin: 10px;
+  overflow: auto;
+}
+
+.md-default kbd {
+	background: #454d5d;
+	border-radius: .1rem;
+	color: #fff;
+	font-size: .7rem;
+	line-height: 1.2;
+	padding: .1rem .15rem;
+}
+
+.md-default blockquote {
+	border-left: .1rem solid #e7e9ed;
+	margin-left: 0;
+	padding: .4rem .8rem;
+}
+
+.md-default .task-list-item input {
+  margin: 0 0.35em 0 -.5em!important;
+}
+
+.md-default ul,
+.md-default ol {
+  margin: .8rem 0 .8rem 1.5rem;
+}
+
+.md-default ul {
+  list-style: disc outside;
+}
+
+.md-default ul ul {  
+  list-style-type: circle;
+}
+
+.md-default ol {
+  list-style: decimal outside;
+}
+
+.md-default ol ol {
+  list-style-type: lower-alpha;
+}
+
+.md-default p {
+  margin: 0;
+  margin-bottom: .5em;
+}
+
+.md-default li {
+  margin-top: 0;
+}
+
+.md-default .timeline {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+.md-default .timeline p {
+  margin: 0;
+}
+/* 
+.md-default .timeline .entry {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+} */
+
+.md-default .timeline .title {
+  flex-shrink: 0;
+  flex-grow: 1;
+  flex-basis: 0;
+  border-right: 2px solid #ddd;
+  text-align: right;
+  padding-right: 2rem;
+  position: relative;
+}
+
+.md-default .timeline .body {
+  text-align: left;
+  padding-left: 2rem;
+  flex-shrink: 0;
+  flex-grow: 3;
+  flex-basis: 0;
+  height: auto;
+}
+
+.md-default .timeline .title,
+.md-default .timeline .body {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.md-default .timeline + .timeline .title,
+.md-default .timeline + .timeline .body {
+  padding-top: 0rem;
+}
+
+.md-default .timeline .title .head {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.md-default .timeline .title .head::after {
+  content: "";
+  position: absolute;
+  right: -7px;
+  border: 3px solid salmon;
+  background-color: salmon;
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+}
+
+.md-default .timeline:hover .title .head::after {
+  background-color: white;
+}
+
+.md-default .timeline .content {
+  color: #999999;
+}
+
+.md-default .timeline .body .content {
+  padding-left: 1em;
+}
+
+/* .md-default .timeline .title > input[type="checkbox"],
+.md-default .timeline .body > input[type="checkbox"] {
+  display: none;
+}
+
+.md-default .timeline .title > input[type="checkbox"] + .content,
+.md-default .timeline .body > input[type="checkbox"] + .content {
+  display: none;
+}
+
+.md-default .timeline .title > input[type="checkbox"]:checked + .content,
+.md-default .timeline .body > input[type="checkbox"]:checked + .content {
+  display: block;
+} */
